@@ -1,0 +1,65 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Heladería</title>
+  </head>
+  <body>
+    <h1>Heladería</h1>
+     <script>
+
+    var tamaño = window.prompt("¿Qué tamaño de helado quieres (g,m o p)?")
+       var precio = 0.00;
+
+
+       if(tamaño == "p"){
+         precio +=1;
+       } else if(tamaño == "m"){
+         precio +=2;
+       } else if (tamaño == "g"){
+         precio +=3;
+       } else{
+         document.write ("No tenemos ese tamaño de helado");
+       }
+                                  var sabor = window.prompt("¿Qué sabor de helado quieres: chocolate, cafe, mango o menta?");
+                                                if(sabor == "chocolate"){
+                                                  precio +=1;
+                                                } else if(sabor == "mango"){
+                                                  precio +=0;
+                                                } else if (sabor == "cafe"){
+                                                  precio +=0;
+                                                }else if (sabor == "menta"){
+                                                   precio +=1;
+                                                 } else{
+                                                  document.write ("No tenemos ese sabor de helado");
+                                                }
+
+
+
+
+
+
+             var topping = window.prompt("¿Qué topping de helado quieres: oreo, pepitas de chocolate, doritos o galleta de chocolate?");
+              if(topping == "oreo"){
+                   precio += 0.3;
+              } else if(topping == "pepitas de chocolate"){
+                precio +=0.5;
+              } else if (topping == "galletas de chocolate"){
+                precio+=0.3;
+              }else if (topping == "doritos"){
+                precio+=0.5;
+               } else{
+                document.write ("No tenemos ese topping de helado");
+              }
+
+
+
+
+          var  precioFinal = precio 
+
+             document.write("<h1>El precio final es: " + precioFinal + "€ <img src=https://th.bing.com/th/id/OIP.BjlIygt_2uqmv_Cw4hnmoQHaE7?rs=1&pid=ImgDetMain></img></h1>");
+
+
+
+           </script>
+          

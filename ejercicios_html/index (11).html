@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tipos de selectores que entran en examen</title>
+    <style>
+  .a {color:red}
+  #er {color:blue}
+      * { text-align: center }
+      h1 {
+        text-align: center;
+        color: orange;
+      }
+      h2 {
+        text-align: center;
+        color: green;
+      }
+
+      p{
+        text-align: center;
+        color: yellow;
+      }
+
+    </style>
+  </head>
+    <body>
+      <h1>Tipos de selectores que entran en examen</h1>
+      <ol><li><h2>Clase (class=””) </h2> </li>
+        <p class="a">Es un identificador de diferentes elementos. Se utiliza para facilitar la modicicación e mediante CSS.</p>
+
+        <li><h2>Identificador (id=””)  </h2> </li>
+        <p id="er">Es un tipo de selector cuyo proposito es vincular a un elemento con un nombre concreto para modificarlo con el CSS.</p>
+        <P>id="er"<BR> #er {
+
+            color: blue;
+          }
+        </P>
+        <li><h2>Todos los elementos (*)  </h2> </li>
+        <p>Es un tipo de identificador que selecciona todo el documento para que  sea modificado mediante CSS.</p>
+        <P>* {
+          text-align: center
+
+        }</P>
+        <li><h2>Varios elementos ( p, em, h1, h2) </h2> </li>
+        <p>Estos grupos de selectores harán que todos los elementos que pertenezcan a esas etiquetas se vean modificados utilizando lenguaje de CSS</p>
+        <p>h1 {
+          text-align: center;
+          color: red;
+        }
+
+        h2 {
+          text-align: center;
+          color: red;
+        }
+
+        p {
+          text-align: center;
+          color: red;
+        }</p>
+        <li><h2>Elementos contenidos en otros elementos (ol li) </h2> </li>
+        <p>Son etiquetas uilizadas para crear diferentes listas de elementos, las ordenadas (ol) y las que no tienen orden (ul)..</p>
+        <li><h2>Sobrevuleo (p:hover) </h2> </li>
+        <p>Es una interacción en la interfaz del usuario que se utiliza para darle un segundo estado a cualquier elemento, cuándo un usuario interactúa con este.</p>
+        <P>a:hover {
+          color: orange;
+        }</P>
+      </ol>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script src="script.js"></script>
+</body>
+
+</html>

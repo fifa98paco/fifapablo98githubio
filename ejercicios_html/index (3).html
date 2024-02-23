@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+   <title>Operadores lógicos binarios</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Operadores binarios lógicos  y salida</h1>
+  <script>
+    var A = 10
+    var B = 20
+
+    document.write("<p>Que " ,A, " es menor que " ,B, " <strong> Y </strong> que " ,B, " es menor que " ,A, " es: " ,A<B&&B<A, "</p>")
+
+    document.write("<p>Que " ,A, " es menor que " ,B, " <strong> O </strong> que " ,B, " es menor que " ,A, " es: " ,A<B||B<A,      
+  "</p>")
+
+    document.write("<p>Que " ,A, " es menor que " ,B, " <strong> Y </strong> que " ,B, " es menor que " ,A, " es: " ,A<B&&B<A, " salvo que empleemos el operador <strong> ! </strong> delante de la expresión, entonces lo negaremos y se convertirá: " ,!(A<B&&B<A), "</p>")
+
+
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
